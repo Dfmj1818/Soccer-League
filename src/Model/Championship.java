@@ -107,11 +107,11 @@ public class Championship {
 	public void sortTeamsTable() {
 		for(int x=0;x<teamsTable.size();x++) {
 			for(int i=0;i<teamsTable.size()-x-1;i++) {
-	            if(teamsTable.get(i).getPoints()<teamsTable.get(i+1).getPoints()){
-	            	Team auxNumber=teamsTable.get(i+1);
-	            	teamsTable.set(i+1,teamsTable.get(i));
-	            	teamsTable.set(i,auxNumber);
-	            }
+				if(teamsTable.get(i).getPoints()<teamsTable.get(i+1).getPoints()){
+					Team auxNumber=teamsTable.get(i+1);
+					teamsTable.set(i+1,teamsTable.get(i));
+					teamsTable.set(i,auxNumber);
+				}
 			}
 		}
 
@@ -121,7 +121,7 @@ public class Championship {
 	public void generateTeamsGoals() {
 		randomGoalsForLocalTeam=random.nextInt(6);	
 		randomGoalsForRivalTeam=random.nextInt(6);	
-		
+
 	}
 
 	public void viewMatchsPlayed() {
